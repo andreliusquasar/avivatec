@@ -2,9 +2,7 @@
     background-color:  #0c102a;
     max-width: 1440px;
     margin: 0 auto;
-    // border: 1px solid yellow;
     width: 100%;
-    // text-align: center;
     
     .aviso {
         width: 100%;
@@ -108,13 +106,23 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        h1 {
+            font-size: 2.5rem;
+        }
         
         h1, h5, p {
             margin: 0;
         }
 
         h5 {
-            margin: 20px 0;
+            margin: 14px 0;
+            font-size: 1rem;
+            letter-spacing: 0.4px;
+        }
+
+        p {
+            margin-right: 100px;
         }
     }
     

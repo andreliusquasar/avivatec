@@ -46,7 +46,7 @@
 
     .texto-footer, .copyright {
         color: #fff;
-        padding-left: 100px;
+        padding: 0 100px;
     }
 
     
@@ -58,14 +58,13 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-right: 100px;
         color: #fff;
         padding-bottom: 100px;
+        font-weight: bold;
 
         a {
             color: #fedd00;
             margin-left: 93px;
-            font-weight: bold;
         }
     }
 
