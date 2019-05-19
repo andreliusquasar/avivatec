@@ -81,7 +81,7 @@
 
     }
 
-    .funcionamento {
+    .funcionamento p {
          font-size: 3.7rem;
          color: #fff;
          margin-bottom: 100px;
@@ -162,23 +162,35 @@
             }
         }
 
-          @media screen and (max-width:320px) {
-                h1 {
-                    font-size: 1rem;
-                }
+        @media screen and (max-width:320px) {
+            h1 {
+                font-size: 1rem;
+            }
 
-                h5 {
-                    font-size: 0.8rem;
-                    margin: 4px 0 12px;
-                }
+            h5 {
+                font-size: 0.8rem;
+                margin: 4px 0 12px;
+            }
 
-                p {
-                    font-size: 0.9rem;
-                    margin: 10px 0;
-                }
-             }
+            p {
+                font-size: 0.9rem;
+                margin: 10px 0;
+            }
+        }
     }
-    
+
+    @media screen and (max-width:768px) {
+      .funcionamento > p {
+            font-size: 2.7rem;
+            margin-bottom: 30px;
+        }
+    }
+
+      @media screen and (max-width:503px) {
+        .funcionamento > p {
+            font-size: 2rem;
+        }
+      }
 }
 
 
