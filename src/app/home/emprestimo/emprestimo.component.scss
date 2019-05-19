@@ -1,0 +1,41 @@
+section {
+    display: flex;
+    flex-direction: column;
+    
+    .container-section {
+        display: flex;
+        flex-direction: row;
+        max-width: 1055px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        margin-top: 40px;
+        justify-content: space-between;
+        align-items: flex-end;
+        
+        img:nth-child(2) {
+            height: 320px;
+        }
+        
+        .card {
+            width: 100%;
+            z-index: 1;
+        }
+        
+    }
+
+    p {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    & > img {
+        margin-top: 70px;
+        margin: 53px auto 0;
+    }
+}
+
