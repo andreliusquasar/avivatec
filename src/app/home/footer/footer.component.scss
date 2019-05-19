@@ -49,12 +49,24 @@
         padding-left: 100px;
     }
 
-    .copyright {
-
-    }
-
+    
     .img-pontos {
         margin: 40px 100px;
+    }
+   
+    .copyright {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 100px;
+        color: #fff;
+        padding-bottom: 100px;
+
+        a {
+            color: #fedd00;
+            margin-left: 93px;
+            font-weight: bold;
+        }
     }
 
 
