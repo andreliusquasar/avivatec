@@ -124,6 +124,59 @@
         p {
             margin-right: 100px;
         }
+
+        @media screen and (max-width:768px) {
+            
+            & {
+                padding: 62px 50px 38px;
+            }
+            
+            h1 {
+                font-size: 2rem; 
+                margin: 0 auto;
+            }
+            
+            h1, h5, p {
+                text-align: center;
+                margin: 15px 0;
+            }
+            
+            p {
+                text-align: justify;
+            }
+        }
+
+        @media screen and (max-width:503px) {
+            h1 {
+                font-size: 1.4rem;
+            }
+
+             h5 {
+                font-size: 0.8rem;
+                margin: 4px 0 12px;
+            }
+
+            p {
+                font-size: 0.9rem;
+                margin: 10px 0;
+            }
+        }
+
+          @media screen and (max-width:320px) {
+                h1 {
+                    font-size: 1rem;
+                }
+
+                h5 {
+                    font-size: 0.8rem;
+                    margin: 4px 0 12px;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    margin: 10px 0;
+                }
+             }
     }
     
 }
