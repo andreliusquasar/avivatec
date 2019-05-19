@@ -1,0 +1,13 @@
+.card-informativo {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #fff;
+    width: 350px;
+    color: #fff;
+
+    div {
+        border: 1px dashed green;
+        text-align: left;
+        margin-left: 20px;
+    }
+}
