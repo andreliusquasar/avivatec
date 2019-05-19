@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CardModel } from './../../model/card-model';
 
 @Component({
@@ -8,17 +8,17 @@ import { CardModel } from './../../model/card-model';
 })
 export class CardInformativoComponent implements OnInit {
 
+  @Input()
   card: CardModel;
+
+  @Input()
+  cor: string;
 
   constructor() { }
 
   ngOnInit() {
-    this.card = {
-      imagem: '../../assets/img/img-1.png',
-      titulo: 'Título',
-      texto: 'Texto de exemplo'
-    };
-    console.log(this.card);
+ 
+    console.log(this.card, this.cor);
   }
 
 }

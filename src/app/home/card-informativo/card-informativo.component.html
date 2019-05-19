@@ -1,7 +1,9 @@
-<div class="card-informativo">
-  <img [src]="card.imagem" alt="">
-  <div>
-    <h5>{{card.titulo}}</h5>
-    <p>{{card.texto}}</p>
+<div class="card-informativo" [ngStyle]="{'background-color': cor}">
+  <div *ngFor="let info of card">
+    <img [src]="info.imagem" alt="">
+    <div [ngClass]="{'texto-branco': info.corTexto == 'branco', 'texto-black': info.corTexto == 'black'}">
+      <h5>{{info.titulo}}</h5>
+      <p>{{info.texto}}</p>
+    </div>
   </div>
 </div>

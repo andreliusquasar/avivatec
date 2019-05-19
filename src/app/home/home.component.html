@@ -7,30 +7,44 @@
     <img src="../../assets/img/close.png" alt="">
   </div>
 
-  <div class="menu">
-    <img src="../../assets/img/logotipo.png" alt="" class="">
-    <div class="item-menu">
-      <a>Sobre nós</a>
-      <a>Como funciona</a>
-      <a>arecisa de ajuda?</a>
-      <div>
-        <img src="../../assets/img/user.png" alt="">
-        <a>Entrar</a>
+  <section>
+    <div class="menu">
+      <img src="../../assets/img/logotipo.png" alt="" class="">
+      <div class="item-menu">
+        <a>Sobre nós</a>
+        <a>Como funciona</a>
+        <a>arecisa de ajuda?</a>
+        <div>
+          <img src="../../assets/img/user.png" alt="">
+          <a>Entrar</a>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <div class="texto">
     <p>Empréstimo<span>online</span></p>
     <p>Faça seu pedido realizando a simulação e bora resolver suas finanças!</p>
   </div>
 
-  <app-emprestimo></app-emprestimo>
+  <section>
+    <app-emprestimo></app-emprestimo>
+  </section>
 
   <div class="funcionamento">
     <p>Como funciona?</p>
   </div>
 
-  <app-card-informativo></app-card-informativo>
+  <section class="card-superior">
+    <app-card-informativo [card]="cardSuperior"></app-card-informativo>
+  </section>
+
+  <section class="card-inferior">
+    <app-card-informativo [card]="cardInferior" [cor]="'yellow'"></app-card-informativo>
+  </section>
+
+  <section>
+    <app-banner></app-banner>
+  </section>
 
 </div>

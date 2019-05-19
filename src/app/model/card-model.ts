@@ -5,4 +5,6 @@ export interface CardModel {
     titulo: string;
 
     texto: string;
+
+    corTexto: string;
 }
