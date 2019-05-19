@@ -4,7 +4,7 @@
     margin: 0 auto;
     border: 1px solid yellow;
     width: 100%;
-    text-align: center;
+    // text-align: center;
     
     .aviso {
         width: 100%;
@@ -96,6 +96,25 @@
     .card-inferior {
         min-height: 175px;
 
+    }
+
+    .bloco-online {
+        height: 257px;
+        background-color: yellow;
+        color: #000;
+        text-align: left;
+        padding-left: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        h1, h5, p {
+            margin: 0;
+        }
+
+        h5 {
+            margin: 20px 0;
+        }
     }
     
 }
