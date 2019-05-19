@@ -14,11 +14,15 @@ export class CardInformativoComponent implements OnInit {
   @Input()
   cor: string;
 
+  @Input()
+  tamanhoImagem: string;
+
   constructor() { }
 
   ngOnInit() {
  
     console.log(this.card, this.cor);
+    console.log(this.tamanhoImagem);
   }
 
 }

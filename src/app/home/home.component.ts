@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TamanhoImagem } from '../model/imagem-model';
 import { CardModel } from './../model/card-model';
 
 @Component({
@@ -12,11 +13,18 @@ export class HomeComponent implements OnInit {
 
   cardInferior: CardModel[];
 
+  tamanhoImagem: TamanhoImagem;
+
   constructor() { }
 
   ngOnInit() {
     this.cardSuperior = this.getInfoCardSuperior();
     this.cardInferior = this.getInfoCardInferior();
+
+    this.tamanhoImagem = {
+      width: '40px',
+      height: '40px'
+    };
   }
 
   private getInfoCardSuperior() {
@@ -64,5 +72,7 @@ export class HomeComponent implements OnInit {
       }
     ];
   }
+
+
 
 }
