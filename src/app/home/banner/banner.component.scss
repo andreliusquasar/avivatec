@@ -25,9 +25,56 @@
             & > img {
                 margin-bottom: 12px;
             }
+
+             @media screen and (max-width:768px) {
+               h1 {
+                   font-size: 2rem; 
+                   margin: 0 auto;
+               }
+
+                & > img {
+                    margin: 32px auto;
+                }
+
+                text-align: justify;
+                padding: 0 50px;
+            }
+            
+             @media screen and (max-width:503px) {
+                h1 {
+                    font-size: 1.5rem;
+                }
+             }
+
+
+             @media screen and (max-width:320px) {
+                h1 {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    margin: 10px 0;
+                    
+                }
+             }
+
+             
         }
     
-    img {
-        margin-right: 50px;
-    }    
+        & > img {
+            margin-right: 50px;
+            width: 45%;
+        }  
+        
+        @media screen and (max-width:768px) {
+            
+             & > img {
+                margin-right: 50px;
+                width: 45%;
+                border: 1px solid red;
+                display: none;
+            }
+            
+        }    
 }
