@@ -66,6 +66,11 @@
         text-align: center;
         color: #FFFFFF;
 
+        h3 {
+            font-size: 3.7rem;
+            margin: 0 0 20px;
+        }
+
         p {
             margin: 0;
         }
@@ -81,7 +86,7 @@
 
     }
 
-    .funcionamento p {
+    .funcionamento h2 {
          font-size: 3.7rem;
          color: #fff;
          margin-bottom: 67px;
@@ -144,6 +149,7 @@
             p {
                 text-align: justify;
             }
+
         }
 
         @media screen and (max-width:503px) {
@@ -160,6 +166,8 @@
                 font-size: 0.9rem;
                 margin: 10px 0;
             }
+
+           
         }
 
         @media screen and (max-width:320px) {
@@ -180,17 +188,37 @@
     }
 
     @media screen and (max-width:768px) {
-      .funcionamento > p {
-            font-size: 2.7rem;
+      .funcionamento > h2 {
+            font-size: 2rem;
             margin-bottom: 30px;
+        }
+
+        .texto {
+            h3 {
+                font-size: 2rem;
+            }
         }
     }
 
       @media screen and (max-width:503px) {
-        .funcionamento > p {
-            font-size: 2rem;
+        .funcionamento > h2 {
+            font-size: 1.4rem;
         }
-      }
+
+        .texto {
+            padding: 0 40px;
+            h3 {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    @media screen and (max-width:320px) {
+        h3 {
+             font-size: 1.5rem;
+        }
+    }
+
 }
 
 
