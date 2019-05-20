@@ -30,19 +30,19 @@ export class HomeComponent implements OnInit {
   private getInfoCardSuperior() {
     return [
       {
-        imagem: '../../assets/img/img-1.png',
+        imagem: '../../assets/img/img-numero-1.png',
         titulo: 'Bora começar!',
         texto: 'Primeiro você vai nos dizer de quanto precisa nos contar um pouco sobre você.',
         corTexto: 'branco'
       },
       {
-        imagem: '../../assets/img/img-2.png',
+        imagem: '../../assets/img/img-numero-2.png',
         titulo: 'É bem rápido!',
         texto: 'Depois que você enviar seu pedido de empréstimo, sem sair da tela e em poucos minutos, receberá uma resposta.',
         corTexto: 'branco'
       },
       {
-        imagem: '../../assets/img/img-3.png',
+        imagem: '../../assets/img/img-numero-3.png',
         titulo: 'Dê o aceite e pronto!',
         texto: 'Assim que receber a aprovação final, assine o contrato e logo mais tenha o dinheiro na mão.',
         corTexto: 'branco'
