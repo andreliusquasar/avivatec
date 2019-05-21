@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
+  valores: number[];
+
   constructor() { }
 
   ngOnInit() {
+    this.valores = [1,2,2,2,2,2];
   }
 
 }
