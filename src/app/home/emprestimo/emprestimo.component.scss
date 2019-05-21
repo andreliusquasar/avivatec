@@ -24,9 +24,9 @@ section {
     }
 
     p {
-    margin-top: 50px;
-    text-align: center;
-    color: #fff;
+        margin-top: 50px;
+        text-align: center;
+        color: #fff;
 
         span {
             font-weight: bold;
@@ -37,5 +37,21 @@ section {
         margin-top: 70px;
         margin: 53px auto 0;
     }
+
+    @media screen and(max-width:1060px){
+        .imagem-lateral {
+            display: none;
+        }
+    }
+
+    @media screen and(max-width:690px){
+        text-align: center;
+        .imagem-top {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    
 }
 
