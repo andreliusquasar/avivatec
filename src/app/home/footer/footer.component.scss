@@ -97,6 +97,8 @@
      }
 
       @media screen and (max-width:950px) {
+
+      
         text-align: center;
         
         & > img:first-child {
@@ -137,6 +139,14 @@
             text-align: justify;
             padding: 0 50px;
         } 
+
+         .logo {
+            border: 1px solid orange;
+            width: 222px;
+        }
+
+             
+
      }
 
 }
