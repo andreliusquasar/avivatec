@@ -12,7 +12,7 @@ export class CadastroComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.valores = [1,2,2,2,2,2];
+    this.valores = [1, 2, 2, 2, 2, 2];
   }
 
 }
