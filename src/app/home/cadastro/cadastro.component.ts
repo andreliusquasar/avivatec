@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CadastroServiceService } from './cadastro-service.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -9,10 +10,13 @@ export class CadastroComponent implements OnInit {
 
   valores: number[];
 
-  constructor() { }
+  constructor(private cadastroService: CadastroServiceService) { }
 
   ngOnInit() {
-    this.valores = [1, 2, 2, 2, 2, 2];
+    this.cadastroService.getValores().subscribe(res => {
+      console.log(res);
+      this.valores = res.slice(1, 7);
+    });
   }
 
 }

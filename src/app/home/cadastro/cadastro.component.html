@@ -1,7 +1,8 @@
 <div class="card">
     <h4>De quanto você precisa?</h4>
     <div class="card-item">
-        <div class="item" *ngFor="let valor of valores; let last = last">
+        <div class="item" *ngFor="let card of valores; let last = last">
+            <span *ngIf="!last">R$ {{card.valor.toFixed(2)}}</span>
             <span *ngIf="last">Outro valor</span>
         </div>
     </div>

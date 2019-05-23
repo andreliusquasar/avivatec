@@ -1,5 +1,5 @@
 .card {
-    height: 258px;
+    min-height: 258px;
     background-color: #fff;
     border-radius: 8px;
     margin: 0 41px;
@@ -23,16 +23,16 @@
         height: 47px;
         border-radius: 6px;
         margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        cursor: pointer;
 
         &:last-child{
             background-color: transparent;
             border: 2px solid #a29a9a;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
             color: #464444;
-
         }
     }
 }
