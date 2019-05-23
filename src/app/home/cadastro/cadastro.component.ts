@@ -13,6 +13,8 @@ export class CadastroComponent implements OnInit {
 
   exibeValores = false;
 
+  teste = false;
+
   private arrayAuxiliar: any[];
   
   constructor(private cadastroService: CadastroServiceService,
@@ -35,6 +37,8 @@ export class CadastroComponent implements OnInit {
       this.valores = this.arrayAuxiliar.slice(0, 6);
     }
   }
+
+  
 
 
   

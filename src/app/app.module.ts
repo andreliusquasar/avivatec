@@ -10,6 +10,7 @@ import { CardInformativoComponent } from './home/card-informativo/card-informati
 import { EmprestimoComponent } from './home/emprestimo/emprestimo.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { FormularioComponent } from './home/formulario/formulario.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HomeComponent } from './home/home.component';
     CadastroComponent,
     CardInformativoComponent,
     BannerComponent,
-    FooterComponent
+    FooterComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,

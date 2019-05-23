@@ -1,8 +1,8 @@
-<div class="card-valor">
+<div class="card-valor" *ngIf="!teste">
     <h4>De quanto você precisa? {{exibeValores}}</h4>
     <div class="card-item">
         <ng-container *ngFor="let card of valores; let last = last">
-            <div class="item" >
+            <div class="item">
                 <span>R$ {{card.valor.toFixed(2)}}</span>
             </div>
 
@@ -14,18 +14,4 @@
     <p>Mínimo de R$ 700,00 e máximo de R$ 20 mil com taxas a partir de <span>2,97%</span></p>
 </div>
 
-
-<div class="formulario">
-    <div class="row">
-            <div class="row">
-                <div class="input-field col s6">
-                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                    <label for="first_name">First Name</label>
-                </div>
-                <div class="input-field col s6">
-                    <input id="last_name" type="text" class="validate">
-                    <label for="last_name">Last Name</label>
-                </div>
-            </div>
-    </div>
-</div>
+<app-formulario *ngIf="teste"></app-formulario>
