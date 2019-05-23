@@ -5,6 +5,7 @@
     margin: 0 41px;
     padding-top: 20px;
     text-align: center;
+    padding-bottom: 10px;
 
     h4 {
         font-size: 1rem;    
@@ -15,6 +16,13 @@
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        margin-bottom: 10px;
+
+          .ultimo-card{
+            background-color: transparent;
+            border: 2px solid #a29a9a;
+            color: #464444;
+        }
     }
 
     .item {
@@ -29,10 +37,14 @@
         font-size: 1.1rem;
         cursor: pointer;
 
-        &:last-child{
-            background-color: transparent;
-            border: 2px solid #a29a9a;
-            color: #464444;
+        span {
+            padding: 10px 15px;
         }
+
     }
+
+    p {
+        margin: 0;
+    }
+      
 }
