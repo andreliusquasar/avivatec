@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 import { CadastroServiceService } from './cadastro-service.service';
 
 @Component({
@@ -14,7 +15,8 @@ export class CadastroComponent implements OnInit {
 
   private arrayAuxiliar: any[];
   
-  constructor(private cadastroService: CadastroServiceService) { }
+  constructor(private cadastroService: CadastroServiceService,
+              private fb: FormBuilder) { }
 
   ngOnInit() {
     this.cadastroService.getValores().subscribe(res => {
@@ -29,13 +31,11 @@ export class CadastroComponent implements OnInit {
 
     if (this.exibeValores) {
       this.valores = this.arrayAuxiliar.slice(0);
-      console.log(this.valores);
     } else {
       this.valores = this.arrayAuxiliar.slice(0, 6);
-      console.log(this.valores);
     }
-
   }
+
 
   
 

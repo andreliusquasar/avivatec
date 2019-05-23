@@ -16,9 +16,13 @@ section {
             height: 320px;
         }
         
-        .card {
+        .card-emprestimo {
             width: 100%;
             z-index: 1;
+
+            img {
+                width: 100%;
+            }
         }
         
     }

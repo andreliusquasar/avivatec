@@ -1,4 +1,4 @@
-.card {
+.card-valor {
     min-height: 258px;
     background-color: #fff;
     border-radius: 8px;
@@ -6,6 +6,7 @@
     padding-top: 20px;
     text-align: center;
     padding-bottom: 10px;
+    border: none;
 
     h4 {
         font-size: 1rem;    
@@ -44,6 +45,7 @@
     }
 
     p {
+        // position: absolute;
         margin: 0;
     }
       
