@@ -7,7 +7,6 @@ section {
         flex-direction: row;
         max-width: 1055px;
         margin: 0 auto;
-        border: 1px solid #ccc;
         margin-top: 40px;
         justify-content: space-between;
         align-items: flex-end;
@@ -24,7 +23,12 @@ section {
                 width: 100%;
             }
         }
-        
+
+        @media screen and(max-width:1060px){
+            img {
+               display: none;
+            }
+        }
     }
 
     p {

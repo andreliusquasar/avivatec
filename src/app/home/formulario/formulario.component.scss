@@ -2,16 +2,17 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
-    padding: 0 30px;
     min-height: 258px;
     background-color: #fff;
     border-radius: 8px;
     margin: 0 41px;
-    padding-top: 20px;
+    // padding-top: 20px;
     text-align: center;
     border: none;
     align-items: center;
     align-items: self-end;
+    // padding: 20px;
+    padding: 20px 30px;
 
     h5 {
         grid-column: 2 span;
@@ -22,5 +23,19 @@
         background-color: #0c102a;
     }
 
+    span {
+        color: red;
+        font-weight: bolder;
+        font-size: 12px;
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        letter-spacing: 1px;
+    }
+
+    textarea.materialize-textarea {
+        margin-bottom: 14px;
+    }
+
 }  
-    
+

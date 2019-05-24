@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { EmprestimoModel } from './../../model/emprestimo.model';
 import { CadastroServiceService } from './cadastro-service.service';
 
 @Component({
@@ -13,12 +14,18 @@ export class CadastroComponent implements OnInit {
 
   exibeValores = false;
 
-  teste = false;
+  emprestimo: EmprestimoModel;
+
+  formalizaEmprestimo = false;
+
+  valorSelecionado: number;
 
   private arrayAuxiliar: any[];
-  
+
+
+
   constructor(private cadastroService: CadastroServiceService,
-              private fb: FormBuilder) { }
+    private fb: FormBuilder) { }
 
   ngOnInit() {
     this.cadastroService.getValores().subscribe(res => {
@@ -38,9 +45,14 @@ export class CadastroComponent implements OnInit {
     }
   }
 
-  
+  selecionarValor(valor: number) {
+    this.valorSelecionado = valor;
+    this.formalizaEmprestimo = !this.formalizaEmprestimo;
+    console.log(typeof valor, valor);
+  }
 
-
-  
+  cadastroSubmetido(): void {
+    this.formalizaEmprestimo = !this.formalizaEmprestimo;
+  }
 
 }

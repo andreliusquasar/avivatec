@@ -45,8 +45,14 @@
     }
 
     p {
-        // position: absolute;
         margin: 0;
+    }
+
+    @media screen and(max-width:1060px){
+        & {
+            width: 63%;
+            margin: 0 auto;
+        }
     }
       
 }
