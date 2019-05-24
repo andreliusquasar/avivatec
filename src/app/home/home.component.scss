@@ -131,10 +131,6 @@
          text-align: center;
     }
 
-    .card-superior {
-        // margin-bottom: 100px;
-    }
-
     .card-inferior {
         min-height: 175px;
 
@@ -204,7 +200,6 @@
                 font-size: 0.9rem;
                 margin: 10px 0;
             }
-
            
         }
 
@@ -271,8 +266,6 @@
         }
     }
 
-    
-
       @media screen and (max-width:503px) {
         .funcionamento > h2 {
             font-size: 1.4rem;
@@ -291,8 +284,6 @@
              font-size: 1.5rem;
         }
     }
-
-
 
 }
 

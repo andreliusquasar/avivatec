@@ -1,11 +1,12 @@
 <form [formGroup]="form" novalidade (ngSubmit)="onSubmit()">
+  
   <div class="formulario">
 
     <h5>Valor do empréstimo {{valorEscolhido | currency:'BRL'}}</h5>
 
     <div class="input-field">
       <input id="nome" type="text" class="validate" formControlName="nome">
-      <label for="nome" data-error="wrong" data-success="right">Nome</label>
+      <label for="nome" data-error="wrong">Nome</label>
       <span *ngIf="form.get('nome').hasError('required') && formularioSubmetido">Nome obrigatório</span>
     </div>
 
@@ -20,10 +21,11 @@
       <label for="comentario">Comentário</label>
       <span *ngIf="form.get('comentario').hasError('required') && formularioSubmetido">Comentário obrigatório</span>
     </div>
-    
-    <button class="btn waves-effect waves-light" type="submit" name="enviar" [disabled]="!form.valid">Enviar</button>
 
+    <button class="btn waves-effect waves-light" type="submit" name="enviar" [disabled]="!form.valid">Enviar</button>
+  
   </div>
+
 </form>
 
 <div id="modal1" class="modal modal-fixed-footer" materialize="modal" [materializeParams]="[{dismissible: false}]"

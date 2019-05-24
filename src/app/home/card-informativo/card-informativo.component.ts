@@ -19,10 +19,6 @@ export class CardInformativoComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
- 
-    // console.log(this.card, this.cor);
-    // console.log(this.tamanhoImagem);
-  }
+  ngOnInit() { }
 
 }

@@ -6,12 +6,10 @@
     background-color: #fff;
     border-radius: 8px;
     margin: 0 41px;
-    // padding-top: 20px;
     text-align: center;
     border: none;
     align-items: center;
     align-items: self-end;
-    // padding: 20px;
     padding: 20px 30px;
 
     h5 {
@@ -35,6 +33,10 @@
 
     textarea.materialize-textarea {
         margin-bottom: 14px;
+    }
+
+    button {
+        border-radius: 6px;
     }
 
 }  

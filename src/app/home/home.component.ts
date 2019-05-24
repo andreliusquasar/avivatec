@@ -27,5 +27,4 @@ export class HomeComponent implements OnInit {
       height: '40px'
     };
   }
- 
 }

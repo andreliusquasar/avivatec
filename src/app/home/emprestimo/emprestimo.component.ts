@@ -9,7 +9,6 @@ export class EmprestimoComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }
